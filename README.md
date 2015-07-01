@@ -55,4 +55,17 @@ The URL of [SafeFood] application is
 http://ec2-54-172-183-7.compute-1.amazonaws.com/safefood/ on Amazon cloud.
 [SafeFood]:http://ec2-54-172-183-7.compute-1.amazonaws.com/safefood/
 
-In the event that the application is unavailable due to the an offline Amazon EC2 instance, please contact us at 240-603-6563 and we shall bring the server instance online.
+In the event that the application is unavailable due to the an offline Amazon EC2 instance, please contact us at admin@tea-llc.com and we shall bring the server instance online.
+
+### Build and Installation
+The following software tools must be installed on the computer in order to build and install the web application
+  - Gradle 2.4
+  - Eclipse Java EE IDE for Web Developers, Luna Service Release 2 (4.4.2)
+  - Jetty 9.3.0
+  - Tomcat 8.0.23
+
+Build and installation instructions are follows 
+  - Open DOS command line prompt and CD to SafeFood project folder.  
+  - Execute "gradle eclipse" to setup development environment.
+  - Execute "gradle jettyRun" to run application. Jetty shall provide the application URL (e.g. http://localhost:8082/safefood).  Use your web browser to launch application URL.
+  - Execute "gradle build" to build the war file for deployment.

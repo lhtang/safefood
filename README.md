@@ -3,26 +3,8 @@
 Safefood is a web application deployed on Amazon Cloud and developed on open source technologies.  
 
 ### Technical Approach
-Agile development methodology is used in the development of FoodGuard, an application providing search capability to retrieve FDA food recall enforcement reports.  The Scrum team consists of the following 
-  - Scrum Master - Technical Architect
-  - Team - Front End Web Developer, Backend Web Developer and DevOps Engineer
-  - Product Owner - TEA
+Agile development methodology is used in the development of SafeFood, an application providing search capability to retrieve FDA food recall enforcement reports. Safefood is a mobile application and web application supporting multiple devices including personal computers, tablets and smartphones.  Safefood consumes data from FDA food recall RESTful service.
 
-Scrum team meetings are held regularly to complete the product including the following meeting types
-  - Backlog Grooming
-  - Spring Planning
-  - Daily Scrum
-  - Sprint Review Meeting
-  - Sprint Retrospective Meeting
-
-There are 2 development Sprints.  Sprint 1 consists of the search criteria page development and Sprint 2 consists of the search results page development.  A daily scrum or “stand up” meeting is held at the start of each work day.  The goal of the daily stand up is for each team member to articulate what he/she has done since the previous day, what is planned for the day ahead, and identify if there is any obstacle preventing him/her from doing what is planned. The Scrum Master, Technical Architect, would work to resolve the blocker or impediment.
-
-At the conclusion of each sprint, a Sprint Review meeting is held to demonstrate the working product to the Product Owner or stake holder. This demonstration meeting provide an internal showcase for whole team, demonstrate what is being done, and provide a venue for direct feedback. 
-
-### Work Breakdown 
-To describe how we will undertake this effort, the TEA Team uses a work breakdown structure (WBS), a deliverable-oriented decomposition of the project into smaller components. Each element may be a feature of the user interface or backend service, or any combination thereof. 
-
-### Design
 At Sprint Planning, we perform business analysis to build a requirements inventory (discovery). We also work to define the system physical construction (hardware, software, broadband access, communications, security issues). The discovery process result in a set of wire frames for user interface development, and use cases for development guidance. 
 
 We build the application for deployment by using a source code repository (GitHub) as part of the configuration management process. 
@@ -39,7 +21,9 @@ We use all open source technologies for development. We use TeamCity as the cont
 ##### Server side Technology Stack
   - Spring 4.1.6 - Model, view, controller framework
   - Logback 1.1.3
+  - Apache Commons 3
   - JUnit 4
+  - Mockito 1.9.5
   - Gradle 2.4
   - Eclipse Java EE IDE for Web Developers, Luna Service Release 2 (4.4.2)
   - Jetty 9.3.0

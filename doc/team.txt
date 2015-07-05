@@ -1,0 +1,15 @@
+The Scrum team consists of the following 
+  - Scrum Master - Technical Architect
+  - Team - Front End Web Developer, Backend Web Developer and DevOps Engineer
+  - Product Owner - TEA
+
+Scrum team meetings are held regularly to complete the product including the following meeting types
+  - Backlog Grooming
+  - Spring Planning
+  - Daily Scrum
+  - Sprint Review Meeting
+  - Sprint Retrospective Meeting
+
+There are 2 development Sprints.  Sprint 1 consists of the search criteria page development and Sprint 2 consists of the search results page development.  A daily scrum or “stand up” meeting is held at the start of each work day.  The goal of the daily stand up is for each team member to articulate what he/she has done since the previous day, what is planned for the day ahead, and identify if there is any obstacle preventing him/her from doing what is planned. The Scrum Master, Technical Architect, would work to resolve the blocker or impediment.
+
+At the conclusion of each sprint, a Sprint Review meeting is held to demonstrate the working product to the Product Owner or stake holder. This demonstration meeting provide an internal showcase for whole team, demonstrate what is being done, and provide a venue for direct feedback. 

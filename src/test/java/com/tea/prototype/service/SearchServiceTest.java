@@ -21,17 +21,6 @@ public class SearchServiceTest {
 	}
 
 	@Test
-	public void testToSearchDateFormat() {
-		
-		Calendar cal = Calendar.getInstance();
-		cal.set(1990, 0, 1);
-		
-		String dateStr = searchService.toSearchDateFormat(cal.getTime());
-		
-		assertEquals(dateStr, "19900101");
-	}
-
-	@Test
 	public void testToSearchFormat() {
 		
 		String formattedParm = searchService.toSearchFormat("This is a test");

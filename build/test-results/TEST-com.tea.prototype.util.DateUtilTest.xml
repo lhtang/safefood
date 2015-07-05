@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.tea.prototype.util.DateUtilTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2015-07-05T15:58:21" hostname="LTang-PC" time="0.016">
+  <properties/>
+  <testcase name="testToSearchDateFormatString" classname="com.tea.prototype.util.DateUtilTest" time="0.016"/>
+  <testcase name="testToSearchDateFormat" classname="com.tea.prototype.util.DateUtilTest" time="0.0"/>
+  <testcase name="testStringToDateObject" classname="com.tea.prototype.util.DateUtilTest" time="0.0"/>
+  <system-out><![CDATA[2015-07-05 11:58:21 [Test worker] DEBUG com.tea.prototype.util.DateUtil - searchDateFormat 19900101
+2015-07-05 11:58:21 [Test worker] DEBUG com.tea.prototype.util.DateUtil - searchDateFormat 19900101
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,15 +1,15 @@
 package com.tea.prototype.service;
 
-import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.StringTokenizer;
 
+import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
-import org.springframework.util.StringUtils;
 
 import com.tea.prototype.bean.SearchCriteriaBean;
+import com.tea.prototype.util.DateUtil;
 
 /**
  * SearchService contains business logic to handle search parameters.
@@ -21,30 +21,7 @@ import com.tea.prototype.bean.SearchCriteriaBean;
 @Service
 public class SearchService {
 	
-	private static final String DATE_FORMAT = "yyyyMMdd";
-
 	private static final Logger logger = LoggerFactory.getLogger(SearchService.class);
-
-	/**
-	 * Format date to FDA date format.
-	 * 
-	 * @param date
-	 * @return searchDateFormat
-	 */
-	public String toSearchDateFormat(Date date) {
-		
-		String searchDateFormat = null;
-		
-		if (date != null) {
-			// Convert to YYYYMMDD format
-		    SimpleDateFormat sdf = new SimpleDateFormat(DATE_FORMAT);
-		    searchDateFormat = sdf.format(date);
-			
-		    logger.debug("searchDateFormat " + searchDateFormat);
-		}
-	    
-		return searchDateFormat;
-	}
 
 	/**
 	 * Convert words to FDA search format.
@@ -81,8 +58,8 @@ public class SearchService {
 	 */
 	public String toSearchParms(SearchCriteriaBean searchCriteria) {
 		
-		Date reportDateFrom = searchCriteria.getReportDateFrom();
-		Date reportDateTo = searchCriteria.getReportDateTo();
+		String reportDateFromStr = searchCriteria.getReportDateFromStr();
+		String reportDateToStr = searchCriteria.getReportDateToStr();
 		String classification = searchCriteria.getClassification();
 		String recallingFirm = searchCriteria.getRecallingFirm();
 		String city = searchCriteria.getCity();
@@ -96,9 +73,9 @@ public class SearchService {
 		StringBuffer searchParms = new StringBuffer();
 		searchParms.append("search=");
 		
-		if (reportDateFrom != null && reportDateTo != null) {
-			String dateFrom = toSearchDateFormat(reportDateFrom);
-			String dateTo = toSearchDateFormat(reportDateTo);
+		if (StringUtils.isNotBlank(reportDateFromStr) && StringUtils.isNotBlank(reportDateToStr)) {
+			String dateFrom = DateUtil.toSearchDateFormat(reportDateFromStr);
+			String dateTo = DateUtil.toSearchDateFormat(reportDateToStr);
 			searchParms.append("report_date:[").append(dateFrom).append("+TO+").append(dateTo).append("]");
 		}
 		

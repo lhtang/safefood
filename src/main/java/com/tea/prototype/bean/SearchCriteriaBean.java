@@ -13,7 +13,9 @@ import java.util.Date;
 public class SearchCriteriaBean {
 
 	private Date reportDateFrom;
+	private String reportDateFromStr;
 	private Date reportDateTo;
+	private String reportDateToStr;
 	private String classification;
 	private String recallingFirm;
 	private String city;
@@ -144,5 +146,41 @@ public class SearchCriteriaBean {
 	 */
 	public void setProductDescription(String productDescription) {
 		this.productDescription = productDescription;
+	}
+
+	/**
+	 * Get the report start date in string format
+	 * 
+	 * @return reportDateFromStr
+	 */
+	public String getReportDateFromStr() {
+		return reportDateFromStr;
+	}
+
+	/**
+	 * Set the report start date in string format 
+	 * 
+	 * @param reportDateFromStr
+	 */
+	public void setReportDateFromStr(String reportDateFromStr) {
+		this.reportDateFromStr = reportDateFromStr;
+	}
+
+	/**
+	 * Get the report end date in string format
+	 * 
+	 * @return reportDateToStr
+	 */
+	public String getReportDateToStr() {
+		return reportDateToStr;
+	}
+
+	/**
+	 * Set the report end date in string format
+	 * 
+	 * @param reportDateToStr
+	 */
+	public void setReportDateToStr(String reportDateToStr) {
+		this.reportDateToStr = reportDateToStr;
 	}
 }

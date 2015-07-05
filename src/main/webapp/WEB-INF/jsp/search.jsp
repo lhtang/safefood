@@ -15,6 +15,8 @@
 	src="<%=request.getContextPath()%>/resources/js/lib/jquery.min.js"></script>
 <script type="text/javascript"
 	src="<%=request.getContextPath()%>/resources/js/lib/jquery.easyui.min.js"></script>
+<script type="text/javascript"
+	src="<%=request.getContextPath()%>/resources/js/custom/validation.js"></script>	
 </head>
 <body>
 
@@ -74,17 +76,15 @@
 					<table cellpadding="5">
 						<tr>
 							<td>Report Date From:</td>
-							<td><form:input class="easyui-datebox" path="reportDateFrom"
-									type="text" id="reportDateFrom" name="reportDateFrom"
-									data-options="required:true" /> &nbsp;To&nbsp; <form:input
-									class="easyui-datebox" path="reportDateTo" type="text"
-									id="reportDateTo" name="reportDateTo"
-									data-options="required:true" /></td>
+							<td><form:input type="text" class="easyui-datebox" id="reportDateFrom" path="reportDateFromStr" validType="validDate"/> 
+								&nbsp;To&nbsp; 
+								<form:input type="text" class="easyui-datebox" id="reportDateTo" path="reportDateToStr" validType="validDate"/>
+							</td>
 						</tr>
 						<tr>
 							<td>Recall Classification:</td>
-							<td><form:select class="easyui-combobox"
-									path="classification" id="classification" name="classification"
+							<td><form:select class="easyui-combobox" id="classification"
+									path="classification"  
 									style="width:150px">
 									<option value=""></option>
 									<option value="Class I">Class I</option>
@@ -94,24 +94,24 @@
 						</tr>
 						<tr>
 							<td>Recalling Firm:</td>
-							<td><form:input class="easyui-inputbox" path="recallingFirm"
-									type="text" id="recallingFirm" style="width:150px" /></td>
+							<td><form:input class="easyui-inputbox" id="recallingFirm" path="recallingFirm"
+									type="text" style="width:150px" /></td>
 						</tr>
 						<tr>
 							<td>Product Description:</td>
-							<td><form:input class="easyui-inputbox"
-									path="productDescription" type="text" id="productDescription"
+							<td><form:input class="easyui-inputbox" id="productDescription"
+									path="productDescription" type="text"
 									style="width:150px" /></td>
 						</tr>
 						<tr>
 							<td>City:</td>
-							<td><form:input class="easyui-inputbox" path="city"
-									type="text" id="city" style="width:150px" /></td>
+							<td><form:input class="easyui-inputbox" id="city" path="city"
+									type="text" style="width:150px" /></td>
 						</tr>
 						<tr>
 							<td>State:</td>
-							<td><form:select class="easyui-combobox" path="state"
-									id="state" name="state" style="width:150px">
+							<td><form:select class="easyui-combobox" id="state" path="state"
+									 style="width:150px">
 									<option value=""></option>
 									<option value="AK">Alaska</option>
 									<option value="AL">Alabama</option>
@@ -169,20 +169,18 @@
 					</table>
 
 					<div style="text-align: center; padding: 5px">
-						</br>
-						</br> <input type="submit" class="easyui-button" value="Submit" />
-				</form:form>
-				&nbsp;&nbsp;&nbsp;&nbsp; <input type="submit" class="easyui-button"
-					value="Clear" onclick="clearForm(); return false;" />
+						<br/>
+						<br/> 
+						<input type="submit" class="easyui-button" value="Search"/>
+						
+						&nbsp;&nbsp;&nbsp;&nbsp; 
+			
+						<input type="submit" class="easyui-button" value="Clear" onclick="clearForm(); return false;" />
+					</div>
+				</form:form>	
 			</div>
-
 		</div>
 	</div>
 
-	<script>
-		function clearForm(){
-			$('#searchForm').form('clear');
-		}
-	</script>
 </body>
 </html>

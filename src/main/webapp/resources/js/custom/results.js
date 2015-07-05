@@ -24,8 +24,6 @@ var resultsRenderer = {
 				var skip = (pageNumber - 1) * pageSize;
 				var limit = pageSize;
 				
-				alert('skip:'+skip+',limit:'+limit); 
-				
 				resultsRenderer.fetchData(limit, skip);
 				
 				$(this).pagination('loaded');

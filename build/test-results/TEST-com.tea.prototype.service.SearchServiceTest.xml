@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.tea.prototype.service.SearchServiceTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2015-06-30T02:13:51" hostname="LTang-PC" time="0.009">
+<testsuite name="com.tea.prototype.service.SearchServiceTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2015-07-05T15:58:21" hostname="LTang-PC" time="0.0">
   <properties/>
-  <testcase name="testToSearchDateFormat" classname="com.tea.prototype.service.SearchServiceTest" time="0.001"/>
-  <testcase name="testToSearchParms" classname="com.tea.prototype.service.SearchServiceTest" time="0.007"/>
-  <testcase name="testToSearchFormat" classname="com.tea.prototype.service.SearchServiceTest" time="0.001"/>
-  <system-out><![CDATA[2015-06-29 22:13:51 [Test worker] DEBUG c.t.prototype.service.SearchService - searchDateFormat 19900101
-2015-06-29 22:13:51 [Test worker] DEBUG c.t.prototype.service.SearchService - searchFormat Rockville
-2015-06-29 22:13:51 [Test worker] DEBUG c.t.prototype.service.SearchService - searchFormat MD
-2015-06-29 22:13:51 [Test worker] DEBUG c.t.prototype.service.SearchService - searchFormat ice+cream
-2015-06-29 22:13:51 [Test worker] DEBUG c.t.prototype.service.SearchService - searchParms search=city:"Rockville"state:"MD"product_description:"ice+cream"
-2015-06-29 22:13:51 [Test worker] DEBUG c.t.prototype.service.SearchService - searchFormat This+is+a+test
-2015-06-29 22:13:51 [Test worker] DEBUG c.t.prototype.service.SearchService - searchFormat This+is+a+test
+  <testcase name="testToSearchParms" classname="com.tea.prototype.service.SearchServiceTest" time="0.0"/>
+  <testcase name="testToSearchFormat" classname="com.tea.prototype.service.SearchServiceTest" time="0.0"/>
+  <system-out><![CDATA[2015-07-05 11:58:21 [Test worker] DEBUG c.t.prototype.service.SearchService - searchFormat Rockville
+2015-07-05 11:58:21 [Test worker] DEBUG c.t.prototype.service.SearchService - searchFormat MD
+2015-07-05 11:58:21 [Test worker] DEBUG c.t.prototype.service.SearchService - searchFormat ice+cream
+2015-07-05 11:58:21 [Test worker] DEBUG c.t.prototype.service.SearchService - searchParms search=city:"Rockville"state:"MD"product_description:"ice+cream"
+2015-07-05 11:58:21 [Test worker] DEBUG c.t.prototype.service.SearchService - searchFormat This+is+a+test
+2015-07-05 11:58:21 [Test worker] DEBUG c.t.prototype.service.SearchService - searchFormat This+is+a+test
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

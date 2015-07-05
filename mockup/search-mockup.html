@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Food Recall Enforcement Reports</title>
+	<link rel="stylesheet" type="text/css" href="../src/main/webapp/resources/js/lib/themes/default/easyui.css">
+	<link rel="stylesheet" type="text/css" href="../src/main/webapp/resources/js/lib/themes/icon.css">
+	<script type="text/javascript" src="../src/main/webapp/resources/js/lib/jquery.min.js"></script>
+	<script type="text/javascript" src="../src/main/webapp/resources/js/lib/jquery.easyui.min.js"></script>
+</head>
+<body>
+	<h2>Food Recall Enforcement Reports</h2>
+	<p>Enter your search criteria and click submit.</p>
+	<div style="margin:20px 0;"></div>
+	<div class="easyui-panel" title="Search Criteria" style="width:650px">
+		<div style="padding:10px 60px 20px 60px">
+	    <form id="ff" method="post">
+	    	<table cellpadding="5">
+	    		<tr>
+	    			<td>Report Date From:</td>
+	    			<td>
+						<input class="easyui-datebox" type="text" name="Report Date From" data-options="required:true"></input>
+						&nbsp;To&nbsp;
+						<input class="easyui-datebox" type="text" name="Report Date To" data-options="required:true"></input>
+					</td>
+	    		</tr>
+	    		<tr>
+	    			<td>Classification:</td>
+	    			<td>
+	    				<select class="easyui-combobox" name="classification" style="width:100px"><option value="">
+							</option><option value="Class I">Class I</option>
+							<option value="Class II">Class II</option>
+							<option value="Class III">Class III</option>
+						</select>
+	    			</td>
+	    		</tr>
+	    	</table>
+	    </form>
+	    <div style="text-align:center;padding:5px">
+	    	<a href="javascript:void(0)" class="easyui-linkbutton" onclick="submitForm()">Submit</a>
+	    	<a href="javascript:void(0)" class="easyui-linkbutton" onclick="clearForm()">Clear</a>
+	    </div>
+	    </div>
+	</div>
+	<script>
+		function submitForm(){
+			$('#ff').form('submit');
+		}
+		function clearForm(){
+			$('#ff').form('clear');
+		}
+	</script>
+</body>
+</html>

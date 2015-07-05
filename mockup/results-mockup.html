@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Food Recall Enforcement Reports</title>
+    <link rel="stylesheet" type="text/css" href="../src/main/webapp/resources/js/lib/themes/default/easyui.css">
+    <link rel="stylesheet" type="text/css" href="../src/main/webapp/resources/js/lib/themes/icon.css">
+    <script type="text/javascript" src="../src/main/webapp/resources/js/lib/jquery.min.js"></script>
+    <script type="text/javascript" src="../src/main/webapp/resources/js/lib/jquery.easyui.min.js"></script>
+	<script type="text/javascript" src="results-mockup.js"></script>
+</head>
+
+<body>
+    <center><h2>Food Recall Enforcement Reports</h2></center>
+    <!--<p>Search results are shown below based on your search criteria.</p>-->
+    <div style="margin:20px 0;"></div>
+	
+	<div style="margin:20px 0;"></div>
+    <div class="easyui-layout" style="width:100%;height:560px;">
+
+		<div id="p" data-options="region:'west'" title="Search Criteria" style="width:20%;padding:10px">
+            <p>Search Criteria</p>
+        </div>
+
+        <div data-options="region:'center'" title="Search Results">
+			<!--********************* Pagination ***********************************-->
+			<div id="paging" style="background:#efefef;border:1px solid #ccc;"></div>
+				
+			<!--********************* Results *************************************-->
+			<div id="results"></div>
+        </div>
+    </div>
+		
+	<script type="text/javascript">
+		// Display pagination and initial set of results
+		resultsRenderer.init();
+	</script>
+	
+</body>
+</html>

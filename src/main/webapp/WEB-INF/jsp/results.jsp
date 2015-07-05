@@ -8,8 +8,6 @@
 	href="<%=request.getContextPath()%>/resources/js/lib/themes/default/easyui.css">
 <link rel="stylesheet" type="text/css"
 	href="<%=request.getContextPath()%>/resources/js/lib/themes/icon.css">
-<link rel="stylesheet"
-	href="<%=request.getContextPath()%>/resources/css/uikit.docs.min.css">
 <script type="text/javascript"
 	src="<%=request.getContextPath()%>/resources/js/lib/jquery.min.js"></script>
 <script type="text/javascript"

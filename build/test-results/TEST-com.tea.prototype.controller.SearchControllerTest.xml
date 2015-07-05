@@ -1,68 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.tea.prototype.controller.SearchControllerTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2015-06-30T02:13:51" hostname="LTang-PC" time="0.098">
+<testsuite name="com.tea.prototype.controller.SearchControllerTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2015-07-05T15:58:20" hostname="LTang-PC" time="0.577">
   <properties/>
-  <testcase name="testLoadSearchCriteriaForm" classname="com.tea.prototype.controller.SearchControllerTest" time="0.084"/>
-  <testcase name="testHandleSearchSubmit" classname="com.tea.prototype.controller.SearchControllerTest" time="0.013"/>
-  <system-out><![CDATA[22:13:51,364 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.groovy]
-22:13:51,364 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
-22:13:51,364 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [file:/C:/Apps/workspace/safefood/build/resources/main/logback.xml]
-22:13:51,400 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
-22:13:51,409 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
-22:13:51,414 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [STDOUT]
-22:13:51,453 |-WARN in ch.qos.logback.core.ConsoleAppender[STDOUT] - This appender no longer admits a layout as a sub-component, set an encoder instead.
-22:13:51,453 |-WARN in ch.qos.logback.core.ConsoleAppender[STDOUT] - To ensure compatibility, wrapping your layout in LayoutWrappingEncoder.
-22:13:51,453 |-WARN in ch.qos.logback.core.ConsoleAppender[STDOUT] - See also http://logback.qos.ch/codes.html#layoutInsteadOfEncoder for details
-22:13:51,454 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.springframework] to DEBUG
-22:13:51,454 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting additivity of logger [org.springframework] to false
-22:13:51,454 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[org.springframework]
-22:13:51,454 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [com.mkyong.helloworld] to DEBUG
-22:13:51,454 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting additivity of logger [com.mkyong.helloworld] to false
-22:13:51,454 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[com.mkyong.helloworld]
-22:13:51,454 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to DEBUG
-22:13:51,454 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[ROOT]
-22:13:51,454 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
-22:13:51,455 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@5e60b2d - Registering current configuration as safe fallback point
+  <testcase name="testLoadSearchCriteriaForm" classname="com.tea.prototype.controller.SearchControllerTest" time="0.53"/>
+  <testcase name="testHandleSearchSubmit" classname="com.tea.prototype.controller.SearchControllerTest" time="0.047"/>
+  <system-out><![CDATA[11:58:19,985 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.groovy]
+11:58:19,985 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+11:58:19,985 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [file:/C:/Users/LTang/Documents/GitHub/safefood/build/resources/main/logback.xml]
+11:58:20,016 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+11:58:20,032 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+11:58:20,032 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [STDOUT]
+11:58:20,078 |-WARN in ch.qos.logback.core.ConsoleAppender[STDOUT] - This appender no longer admits a layout as a sub-component, set an encoder instead.
+11:58:20,078 |-WARN in ch.qos.logback.core.ConsoleAppender[STDOUT] - To ensure compatibility, wrapping your layout in LayoutWrappingEncoder.
+11:58:20,078 |-WARN in ch.qos.logback.core.ConsoleAppender[STDOUT] - See also http://logback.qos.ch/codes.html#layoutInsteadOfEncoder for details
+11:58:20,078 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.springframework] to DEBUG
+11:58:20,078 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting additivity of logger [org.springframework] to false
+11:58:20,078 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[org.springframework]
+11:58:20,078 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [com.mkyong.helloworld] to DEBUG
+11:58:20,078 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting additivity of logger [com.mkyong.helloworld] to false
+11:58:20,078 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[com.mkyong.helloworld]
+11:58:20,078 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to DEBUG
+11:58:20,078 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[ROOT]
+11:58:20,078 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+11:58:20,078 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@2b8ba238 - Registering current configuration as safe fallback point
 
-2015-06-29 22:13:51 [Test worker] DEBUG c.t.p.controller.SearchController - Entering loadSearchCriteriaForm
-2015-06-29 22:13:51 [Test worker] DEBUG c.t.p.controller.SearchController - Entering handleSearchSubmit
-2015-06-29 22:13:51 [Test worker] DEBUG c.t.p.controller.SearchController - Date From null
-2015-06-29 22:13:51 [Test worker] DEBUG c.t.p.controller.SearchController - Date To null
-2015-06-29 22:13:51 [Test worker] DEBUG c.t.p.controller.SearchController - classification null
-2015-06-29 22:13:51 [Test worker] DEBUG c.t.prototype.service.SearchService - searchParms search=
+2015-07-05 11:58:20 [Test worker] DEBUG c.t.p.controller.SearchController - Entering loadSearchCriteriaForm
+2015-07-05 11:58:20 [Test worker] DEBUG n.s.u.internal.data.DataBuilder - No patterns for operating system entry (with id '114') available.
+2015-07-05 11:58:20 [Test worker] DEBUG n.s.u.internal.data.DataBuilder - No pattern available for 'Other'.
+2015-07-05 11:58:20 [Test worker] DEBUG n.s.u.internal.data.DataBuilder - No pattern available for 'Personal computer'.
+2015-07-05 11:58:20 [Test worker] DEBUG c.t.p.service.DeviceTypeService - deviceName => 
+2015-07-05 11:58:21 [Test worker] DEBUG c.t.p.controller.SearchController - Entering handleSearchSubmit
+2015-07-05 11:58:21 [Test worker] DEBUG c.t.p.controller.SearchController - {}
+2015-07-05 11:58:21 [Test worker] DEBUG c.t.prototype.service.SearchService - searchParms search=
+2015-07-05 11:58:21 [Test worker] DEBUG c.t.p.service.DeviceTypeService - deviceName => 
 ]]></system-out>
-  <system-err><![CDATA[Jun 29, 2015 10:13:50 PM org.springframework.test.context.web.WebTestContextBootstrapper getDefaultTestExecutionListenerClassNames
+  <system-err><![CDATA[Jul 05, 2015 11:58:19 AM org.springframework.test.context.web.WebTestContextBootstrapper getDefaultTestExecutionListenerClassNames
 INFO: Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
-Jun 29, 2015 10:13:50 PM org.springframework.test.context.web.WebTestContextBootstrapper instantiateListeners
+Jul 05, 2015 11:58:19 AM org.springframework.test.context.web.WebTestContextBootstrapper instantiateListeners
 INFO: Could not instantiate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttributeSource]
-Jun 29, 2015 10:13:50 PM org.springframework.test.context.web.WebTestContextBootstrapper instantiateListeners
+Jul 05, 2015 11:58:19 AM org.springframework.test.context.web.WebTestContextBootstrapper instantiateListeners
 INFO: Could not instantiate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
-Jun 29, 2015 10:13:50 PM org.springframework.test.context.web.WebTestContextBootstrapper getTestExecutionListeners
+Jul 05, 2015 11:58:19 AM org.springframework.test.context.web.WebTestContextBootstrapper getTestExecutionListeners
 INFO: Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@77504784, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@74c7130e, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7a59403]
-Jun 29, 2015 10:13:50 PM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+Jul 05, 2015 11:58:19 AM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
 INFO: Loading XML bean definitions from URL [file:src/main/webapp/WEB-INF/applicationContext.xml]
-Jun 29, 2015 10:13:51 PM org.springframework.web.context.support.GenericWebApplicationContext prepareRefresh
-INFO: Refreshing org.springframework.web.context.support.GenericWebApplicationContext@6fb9d7e8: startup date [Mon Jun 29 22:13:51 EDT 2015]; root of context hierarchy
-Jun 29, 2015 10:13:51 PM org.springframework.web.servlet.handler.SimpleUrlHandlerMapping registerHandler
+Jul 05, 2015 11:58:19 AM org.springframework.web.context.support.GenericWebApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.web.context.support.GenericWebApplicationContext@6fb9d7e8: startup date [Sun Jul 05 11:58:19 EDT 2015]; root of context hierarchy
+Jul 05, 2015 11:58:20 AM org.springframework.web.servlet.handler.SimpleUrlHandlerMapping registerHandler
 INFO: Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
-Jun 29, 2015 10:13:51 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping registerHandlerMethod
+Jul 05, 2015 11:58:20 AM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping registerHandlerMethod
 INFO: Mapped "{[/],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.tea.prototype.controller.SearchController.loadSearchCriteriaForm(org.springframework.ui.Model)
-Jun 29, 2015 10:13:51 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping registerHandlerMethod
+Jul 05, 2015 11:58:20 AM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping registerHandlerMethod
 INFO: Mapped "{[/search],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.tea.prototype.controller.SearchController.handleSearchSubmit(com.tea.prototype.bean.SearchCriteriaBean,org.springframework.ui.Model)
-Jun 29, 2015 10:13:51 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter initControllerAdviceCache
-INFO: Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@6fb9d7e8: startup date [Mon Jun 29 22:13:51 EDT 2015]; root of context hierarchy
-Jun 29, 2015 10:13:51 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter initControllerAdviceCache
-INFO: Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@6fb9d7e8: startup date [Mon Jun 29 22:13:51 EDT 2015]; root of context hierarchy
-Jun 29, 2015 10:13:51 PM org.springframework.mock.web.MockServletContext log
+Jul 05, 2015 11:58:20 AM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter initControllerAdviceCache
+INFO: Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@6fb9d7e8: startup date [Sun Jul 05 11:58:19 EDT 2015]; root of context hierarchy
+Jul 05, 2015 11:58:20 AM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter initControllerAdviceCache
+INFO: Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@6fb9d7e8: startup date [Sun Jul 05 11:58:19 EDT 2015]; root of context hierarchy
+Jul 05, 2015 11:58:20 AM org.springframework.mock.web.MockServletContext log
 INFO: Initializing Spring FrameworkServlet ''
-Jun 29, 2015 10:13:51 PM org.springframework.test.web.servlet.TestDispatcherServlet initServletBean
+Jul 05, 2015 11:58:20 AM org.springframework.test.web.servlet.TestDispatcherServlet initServletBean
 INFO: FrameworkServlet '': initialization started
-Jun 29, 2015 10:13:51 PM org.springframework.test.web.servlet.TestDispatcherServlet initServletBean
-INFO: FrameworkServlet '': initialization completed in 11 ms
-Jun 29, 2015 10:13:51 PM org.springframework.mock.web.MockServletContext log
+Jul 05, 2015 11:58:20 AM org.springframework.test.web.servlet.TestDispatcherServlet initServletBean
+INFO: FrameworkServlet '': initialization completed in 0 ms
+Jul 05, 2015 11:58:21 AM org.springframework.mock.web.MockServletContext log
 INFO: Initializing Spring FrameworkServlet ''
-Jun 29, 2015 10:13:51 PM org.springframework.test.web.servlet.TestDispatcherServlet initServletBean
+Jul 05, 2015 11:58:21 AM org.springframework.test.web.servlet.TestDispatcherServlet initServletBean
 INFO: FrameworkServlet '': initialization started
-Jun 29, 2015 10:13:51 PM org.springframework.test.web.servlet.TestDispatcherServlet initServletBean
-INFO: FrameworkServlet '': initialization completed in 2 ms
+Jul 05, 2015 11:58:21 AM org.springframework.test.web.servlet.TestDispatcherServlet initServletBean
+INFO: FrameworkServlet '': initialization completed in 0 ms
 ]]></system-err>
 </testsuite>

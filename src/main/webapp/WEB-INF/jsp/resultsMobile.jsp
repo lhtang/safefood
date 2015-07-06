@@ -20,7 +20,7 @@
             <div class="m-toolbar">
                 <div class="m-title">SafeFood - Search Results</div>
                 <div class="m-right">
-                    <a href="/safefood" class="easyui-linkbutton"">Change</a>
+                    <a href="/safefood" class="easyui-linkbutton">Change</a>
                 </div>
             </div>
         </header>

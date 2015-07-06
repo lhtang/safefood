@@ -42,18 +42,18 @@
 				<b>Your Search Options are:</b>
 			</p>
 
-			<c:if test="${not empty searchCriteriaBean.reportDateFrom}">
+			<c:if test="${not empty searchCriteriaBean.reportDateFromStr}">
 				<p>
 					<b>Report Date From:</b>
 				</p>
-				<p>${searchCriteriaBean.reportDateFrom}</p>
+				<p>${searchCriteriaBean.reportDateFromStr}</p>
 			</c:if>
 
-			<c:if test="${not empty searchCriteriaBean.reportDateTo}">
+			<c:if test="${not empty searchCriteriaBean.reportDateToStr}">
 				<p>
 					<b>Report Date To:</b>
 				</p>
-				<p>${searchCriteriaBean.reportDateTo}</p>
+				<p>${searchCriteriaBean.reportDateToStr}</p>
 			</c:if>
 
 			<c:if test="${not empty searchCriteriaBean.classification}">

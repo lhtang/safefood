@@ -82,7 +82,7 @@
 							</td>
 						</tr>
 						<tr>
-							<td>Recall Classification:</td>
+							<td>Recalling Classification:</td>
 							<td><form:select class="easyui-combobox" id="classification"
 									path="classification"  
 									style="width:150px">

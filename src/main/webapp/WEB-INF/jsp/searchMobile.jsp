@@ -51,9 +51,9 @@
 					style="width:100%" validType="validDate"/>
 			</div>
 			<div>
-				<label>Recall Classification</label>
+				<label>Recalling Classification</label>
 				<form:select class="easyui-combobox" id="classification"
-					path="classification" prompt="Recall Classification"
+					path="classification" prompt="Recalling Classification"
 					style="width:100%">
 					<option value=""></option>
 					<option value="Class I">Class I</option>

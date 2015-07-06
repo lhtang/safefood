@@ -131,6 +131,6 @@ var resultsRenderer = {
 	},
 	
 	wrapHtmlTable : function() {
-		return '<table cellpadding="5">' + this.htmlTableRows + '</table>';
+		return '<table cellpadding="5" width="100%">' + this.htmlTableRows + '</table>';
 	}
 };

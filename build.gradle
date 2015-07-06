@@ -1,3 +1,15 @@
+buildscript {
+  repositories {
+    maven {
+      url "https://plugins.gradle.org/m2/"
+    }
+  }
+  dependencies {
+    classpath "org.hidetake:gradle-ssh-plugin:1.1.3"
+  }
+}
+
+apply plugin: "org.hidetake.ssh"
 apply plugin: 'java'
 apply plugin: 'war'
 apply plugin: 'eclipse-wtp'
@@ -51,4 +63,29 @@ eclipse {
 
 task listJars << {
     configurations.compile.each { File file -> println file.name }
+}
+
+// For deployment to EC2
+remotes {
+    web01 {
+        host = '*.*.*.*'
+        user = 'ec2-user'
+        // password = 'pass'
+        identity = file('file.pem')
+    }
+}
+ 
+task deployWar << {
+  ssh.run {
+	    def tomcatHome = '/usr/share/tomcat8/webapps'
+	    def warName = "safefood"
+	    session(remotes.web01) {
+	    
+	        put(war.archivePath.absolutePath,"${tomcatHome}/${warName}.war.new")
+	        
+	        execute("rm ${tomcatHome}/${warName}.war")
+	        
+	        execute("mv ${tomcatHome}/${warName}.war{.new,}")	        
+	    }
+    }
 }
